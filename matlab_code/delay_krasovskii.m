@@ -1,5 +1,9 @@
 clc;clear;
-%还没正确
+%{
+此文件针对\dot{x}=A*x(t)-B*F*x(t-\tau)
+选取lyapunov方程为V(t)=x^T*Px+\int_{t-\tau}^t x(s)Sx(s)ds+\tau int_-\tau^0
+int_{t+\theta}^t {\dot{x}R\dot{x}}ds d\theta
+%}
 A=[0 1;1 0];
 B=[1;1];
 F=[-1,-1];
