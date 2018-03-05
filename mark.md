@@ -42,6 +42,7 @@ $D={\{d\in}{\bf R}^m:d_{ii}=0\ or\ 1,d_{ij}=0(i\ne j)\}$
 ##对于只有输入时滞环节的系统
 
 $$ \dot{x}(t)=Ax(t)+BFx(t-\tau)$$
+###Razumihkin方法
 注意到$x(t)-x(t-\tau)=\int_{t-\tau}^t \dot{x}(\theta)\;d\theta$
 设$\Sigma=P(A+BF)+(A+BF)^TP$
 $A^TM_1^{-1}A<P$
@@ -65,4 +66,29 @@ $=x^T(t)(\Sigma+\tau PBF(M_1+M_2)F^TB^TP+2\tau (1+2\beta)P)x(t)$
 $\Sigma+\tau PBF(M_1+M_2)F^TB^TP+2\tau (1+2\beta)P<0$
 有
 $\Sigma+\tau PBF(M_1+M_2)F^TB^TP+2\tau (1+\beta)P<-2\tau\beta P$
+因此LMI方程为：
+* $Q>0$
+* $\begin{bmatrix} Q &QA^T\\AQ&M_1\end{bmatrix}>0$
+* $\begin{bmatrix} Q& Q(BF)^T\\BFQ&M_2\end{bmatrix}>0$
+* $(A+BF)Q+Q(A+BF)^T+\tau BF(M_1+M_2)F^TB^T+2\tau Q<0$
+### Krasovskii方法
+$V(x(t))=x^T(t)Px(t)+\int_{t-\tau}^te^{2\alpha(s-t)}x^T(s)Sx(s)\;ds+\tau \int_{-\tau}^0\int_{t+\theta}^te^{2\alpha(s-t)}\dot{x}^T(s)R\dot{x}(s)\;ds\;d\theta$
+$\dot{V}(t)+2\alpha V(t)=2x^T(t)P\dot{x}(t)+x^T(t)[S+2\alpha P]x(t)+\tau^2\dot{x}^T(t)R\dot{x}(t)-x^T(t-\tau)Se^{-2\alpha \tau}x(t-\tau)$
+$\qquad \qquad \qquad \qquad -\tau e^{-2\alpha\tau}\int_{t-\tau}^t\dot{x}^T(\theta)R\dot{x}(\theta)\;d\theta$
+$\qquad \qquad \qquad \quad <2x^T(t)P\dot{x}(t)+x^T(t)[S+2\alpha P]x(t)+\tau^2\dot{x}^T(t)R\dot{x}(t)-x^T(t-\tau)Se^{-2\alpha \tau}x(t-\tau)$
+$\qquad \qquad \qquad \qquad -[x(t)-x(t-\tau)]^TRe^{-2\alpha\tau}[x(t)-x(t-\tau)]$
+$\qquad \qquad \qquad \quad =\eta^T \Omega\eta $
+其中
+$\eta=\begin{bmatrix} x(t)\\\dot{x}(t)\\x(t-\tau)\end{bmatrix}$
+$\Omega=\begin{bmatrix}S+2\alpha P-Re^{-2\alpha \tau}& P&Re^{-2\alpha \tau}\\*&\tau^2R&0\\*&*&-(S+R)e^{-2a\tau} \end{bmatrix}$
+在利用到等式约束
+$2[x^T(t)P_2+\dot{x}^T(t)P_3][Ax(t)+BFx(t-\tau)-\dot{x}(t)]=0$
+$\eta^T \begin{bmatrix} P_2A+A^TP_2&-P_2+A^TP_3&P_2BF\\*&-P_3-P_3^T&P_3BF\\*&*&0\end{bmatrix}\eta=0$
+最后要求
+$\eta^T\Omega^*\eta<0$
+$$\Omega^*=\begin{bmatrix}S+2\alpha P-Re^{-2\alpha\tau}+P_2A+A^TP_2& P-P_2+A^TP_3& Re^{-2\alpha\tau}+P_2BF\\*&\tau^2R-P_3-P_3^T&P_3BF\\*&*&-(S+R)e^{-2\alpha\tau}\end{bmatrix}$$
+相关代码在[delay_krasovskii_2.m](matlab_code/delay_krasovskii_2.m)
+LMI方程为：
+* $P>0,$$S>0,$$R>0$
+* $\begin{bmatrix}S+2\alpha P-Re^{-2\alpha\tau}+P_2A+A^TP_2& P-P_2+A^TP_3& Re^{-2\alpha\tau}+P_2BF\\*&\tau^2R-P_3-P_3^T&P_3BF\\*&*&-(S+R)e^{-2\alpha\tau}\end{bmatrix}<0$
 
