@@ -1,0 +1,605 @@
+%2multibyte Version: 5.50.0.2890 CodePage: 936
+\documentclass[9pt]{article}%
+\usepackage{bbm}
+\usepackage{epsfig}
+\usepackage{graphics,graphicx,amssymb,amsmath,verbatim}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{easybmat}
+\usepackage{color}%
+\setcounter{MaxMatrixCols}{30}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2890}
+%TCIDATA{Codepage=936}
+%TCIDATA{LastRevised=Tuesday, June 16, 2015 09:38:25}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\dot{V}_{2}\left(  e\left(  t\right)  \right)  $
+%$\gamma^{{}}$
+%$N$
+%$P=\left[
+%\begin{array}
+%[c]{cc}%
+%1 & \\
+%& t
+%\end{array}
+%\right]  $
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect \rule{.1in}{.1in}}
+%EndMSIPreambleData
+\setlength{\marginparwidth}{0.5in} \setlength{\marginparsep}{0.5in}
+\setlength{\oddsidemargin}{-0in} \setlength{\evensidemargin}{-0in}
+\setlength{\textwidth}{6.5in} \setlength{\topmargin}{-0.75in}
+\setlength{\textheight}{9.5in} \setlength{\parindent}{0in}
+\setlength{\parskip}{.1in}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgment}{Acknowledgment}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{assumption}{Assumption}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newtheorem{solution}{Solution}
+\newtheorem{summary}{Summary}
+\newenvironment{proof}[1][Proof]{\noindent \textbf{#1.} }{\  \rule{0.5em}{0.5em}}
+\definecolor{blue}{rgb}{0,0,1}
+\allowdisplaybreaks[4]
+\begin{document}
+
+\title{Regional Stabilization of Time-Delay Systems with Actuator Saturation and
+Delay }
+\author{Bin Zhou\thanks{The authors are with the Center for Control Theory and
+Guidance Technology, Harbin Institute of Technology, Harbin, 150001, China.
+Email: \texttt{binzhoulee@163.com, binzhou@hit.edu.cn}.}\quad \quad Xuefei
+Yang$^{\ast}$}
+\date{}
+\maketitle
+
+\begin{abstract}
+to be added
+
+\vspace{0.3cm}
+
+\textbf{Keywords:} to be added
+
+\end{abstract}
+
+\section{Introduction}
+
+\section{Problem Formulation}
+
+In this section, we first consider the following linear time-delay system with
+actuator saturation:%
+\begin{equation}
+\left \{
+\begin{array}
+[c]{l}%
+\dot{x}\left(  t\right)  =Ax\left(  t\right)  +A_{\mathrm{r}}x\left(
+t-r\right)  +B\mathrm{sat}\left(  u\left(  t\right)  \right) \\
+x\left(  t\right)  =\phi \left(  t\right)  ,u\left(  t\right)  =\omega \left(
+t\right)  ,\forall t\in \left[  -r,0\right]  ,
+\end{array}
+\right.  \label{tds}%
+\end{equation}
+where $r$ is nonnegative scalar, and $A,A_{\mathrm{r}}$ and $B$ are known
+matrices. The function $\mathrm{sat}\left(  u\right)  $: $\mathbf{R}%
+^{m}\rightarrow \mathbf{R}^{m}$ is the standard saturation defined as follows:%
+\[
+\mathrm{sat}\left(  u\left(  t\right)  \right)  =\left[
+\begin{array}
+[c]{ccc}%
+\mathrm{sat}\left(  u_{1}\right)  & \cdots & \mathrm{sat}\left(  u_{2}\right)
+\end{array}
+\right]  ^{\mathrm{T}},
+\]
+with $\mathrm{sat}\left(  u_{i}\right)  =\mathrm{sign}\left(  u_{i}\right)
+\min \left \{  1,\left \vert u_{i}\right \vert \right \}  .$ Let $\mathcal{C}%
+_{n,r}=$ $\mathcal{C}\left(  \left[  -r,0\right]  ,\mathbf{R}^{n}\right)  $
+denote the Banach space of continuous vector functions mapping the interval
+$\left[  -r,0\right]  $ into $\mathbf{R}^{n}$ with the topology of uniform
+convergence, and $x_{t}\in \mathcal{C}_{n,r}$ denote the restriction of
+$x\left(  t\right)  $ to the interval $\left[  t-r,t\right]  $ translated to
+$\left[  -r,0\right]  .$ When a state feedback $u\left(  t\right)
+=F^{\mathrm{T}}x\left(  t\right)  $ is applied on to the system (\ref{tds}),
+the resulting closed-loop system reads%
+\begin{equation}
+\left \{
+\begin{array}
+[c]{l}%
+\dot{x}\left(  t\right)  =Ax\left(  t\right)  +A_{\mathrm{r}}x\left(
+t-r\right)  +B\mathrm{sat}\left(  F^{\mathrm{T}}x\left(  t\right)  \right) \\
+x\left(  t\right)  =\phi \left(  t\right)  ,\forall t\in \left[  -r,0\right]  .
+\end{array}
+\right.  \label{ctds}%
+\end{equation}
+For an initial condition $x_{0}\in \mathcal{C}_{n+m,r},$ denote the solution of
+system (\ref{ctds}) as $x\left(  t,x_{0}\right)  .$ Assume that the trivial
+solution $x\left(  t,x_{0}\right)  \equiv0$ is asymptotically stable, then the
+domain of attraction of the origin is defined as%
+\[
+\mathcal{G}=\left \{  x_{0}\in \mathcal{C}_{n,r}:\underset{t\rightarrow \infty
+}{\lim}\left \Vert x\left(  t,x_{0}\right)  \right \Vert =0\right \}  .
+\]
+A set $\mathcal{S}\subset \mathcal{C}_{n,r}$ is said to be invariant for system
+(\ref{ctds}) if $x_{0}\in \mathcal{S}\Rightarrow x\left(  t,x_{0}\right)
+\in \mathcal{S},\forall t\geq0.$ Moreover, a set $\mathcal{S}$ is called a
+contractively invariant set if it is an invariant set and is in the domain of attraction.
+
+\begin{problem}
+Given a state gain $F$, how to determine whether the closed-loop system $y$
+(\ref{ctds1}) is locally stable, and then to determine the local stability of
+the system $x$ (\ref{ctds})?
+\end{problem}
+
+\begin{problem}
+For a given $F,$ if system (\ref{ctds1}) is locally stable, how to find a set
+$\mathcal{L}_{y}\subset \mathcal{\bar{C}}_{n,r}$ such that $\mathcal{L}_{y}$ is
+an estimate of the domian of attraciton for the system (\ref{ctds1}), and is
+as large as possible? As a result, to get a corresponding estimate of the
+domian of attraciton $\mathcal{L}_{x}\subset \mathcal{C}_{n+m,r}$ for the
+system (\ref{ctds}).
+\end{problem}
+
+\begin{problem}
+How to disign an $F$ such that an estimate of the domain of attraction
+$\mathcal{L}_{y}$ for $y$ system is maximized? And it follows that the
+corresponding estimate of the domian of attraciton $\mathcal{L}_{x}$ for the
+system (\ref{ctds}) is also maximized.
+\end{problem}
+
+Let $\mathcal{V}$ be the set of all $m\times m$ diagonal matrices whose
+diagonal elements are either 1 or 0, then there are 2$^{m}$ elements in
+$\mathcal{V}.$ Assume that each element in $\mathcal{V}$ is labeled as
+$D_{i},i\in \mathcal{V}_{m}\triangleq \left \{  1,2,\ldots,2^{m}\right \}  $ and
+let $D_{i}^{-}=I-D_{i},i\in \mathcal{V}_{m}.$ Then we give the following lemma
+for later use.
+
+\begin{lemma}
+\label{lemma1}For two vectors $u,v\in \mathbf{R}^{m},$ if $\left \Vert
+v\right \Vert _{\infty}\leq1,$ then%
+\[
+\mathrm{sat}\left(  u\right)  \in \mathrm{co}\left \{  D_{i}u+D_{i}^{-}%
+v,i\in \mathcal{V}_{m}\right \}  ,
+\]
+where $\mathrm{co}\left \{  \cdot \right \}  $ denotes the convex hull of a set.
+\end{lemma}
+
+\begin{lemma}
+\label{lemma2}For a given positive-define matrice $R\in \mathbf{R}^{n\times
+n},$ any differentiable function $\omega$ in $\left[  a,b\right]
+\longrightarrow \mathbf{R}^{n},$ the following inequality holds:%
+\begin{equation}
+\int_{a}^{b}\dot{\omega}^{\mathrm{T}}\left(  s\right)  R\dot{\omega
+}^{\mathrm{T}}\left(  s\right)  \mathrm{d}s\geq \frac{1}{b-a}\left(
+\omega \left(  b\right)  -\omega \left(  a\right)  \right)  ^{\mathrm{T}%
+}R\left(  \omega \left(  b\right)  -\omega \left(  a\right)  \right)  .
+\label{eq17}%
+\end{equation}
+
+\end{lemma}
+
+\begin{lemma}
+\label{lemma3}Let $x_{i}\in \mathbf{R}^{n},i\in \mathbf{I}\left[  1,m\right]
+,m\geq1,$ be a series of vectors and $P>0$ be given. Then%
+\begin{equation}
+\left(  \underset{i1}{\overset{m}{\sum}}x_{i}\right)  ^{\mathrm{T}}P\left(
+\underset{i1}{\overset{m}{\sum}}x_{i}\right)  \leq m\left(  \underset
+{i1}{\overset{m}{\sum}}x_{i}^{\mathrm{T}}Px_{i}\right)  . \label{eq27}%
+\end{equation}
+
+\end{lemma}
+
+\begin{lemma}
+\label{lemma4}Let $\mathcal{A},\mathcal{B},\mathcal{H},\mathcal{P}$ and
+$\mathcal{F}$ be real matrices of appropriate dimensions such that
+$\mathcal{P}>0$ and $\mathcal{F}^{\mathrm{T}}\mathcal{F}\leq I$. Then for any
+$\varepsilon>0$ such that $\mathcal{P}^{-1}-\varepsilon^{-1}\mathcal{BB}%
+^{\mathrm{T}}>0,$%
+\begin{equation}
+\left(  \mathcal{A+BFH}\right)  ^{\mathrm{T}}\mathcal{P}\left(
+\mathcal{A+BFH}\right)  \leq \mathcal{A}^{\mathrm{T}}\left(  \mathcal{P}%
+^{-1}-\varepsilon^{-1}\mathcal{BB}^{\mathrm{T}}\right)  ^{-1}\mathcal{A+}%
+\varepsilon \mathcal{H}^{\mathrm{T}}\mathcal{H}\text{.} \label{eq18}%
+\end{equation}
+
+\end{lemma}
+
+\section{Main Results}
+
+For $x_{t}\in \mathcal{C}_{n,r}$ and given positive-define matrices
+$P\in \mathbf{R}^{n\times n},Q\in \mathbf{R}^{Nn\times Nn},R\in \mathbf{R}%
+^{n\times n},$ and an integer $N\geq1,$ we choose a Laypunov-Krasovskii
+functional candidate as%
+\begin{equation}
+V\left(  x_{t}\right)  =V_{1}\left(  x_{t}\right)  +V_{2}\left(  x_{t}\right)
++V_{3}\left(  x_{t}\right)  \label{eq8}%
+\end{equation}
+where%
+\begin{align*}
+V_{1}\left(  x_{t}\right)   &  =x^{\mathrm{T}}\left(  t\right)  Px\left(
+t\right)  ,\\
+V_{2}\left(  x_{t}\right)   &  =\int_{t-\frac{r}{N}}^{t}\pi^{\mathrm{T}%
+}\left(  s\right)  Q\pi \left(  s\right)  \mathrm{d}s,\\
+V_{3}\left(  x_{t}\right)   &  =\int_{-r}^{0}\int_{t+s}^{t}\dot{x}%
+^{\mathrm{T}}\left(  \theta \right)  R\dot{x}\left(  \theta \right)
+\mathrm{d}\theta \mathrm{d}s,
+\end{align*}
+and%
+\[
+\pi \left(  s\right)  =\left[
+\begin{array}
+[c]{c}%
+x\left(  s\right) \\
+x\left(  s-\frac{1}{N}r\right) \\
+\vdots \\
+x\left(  s-\frac{N-1}{N}\right)
+\end{array}
+\right]  .
+\]
+Then we can present the following theorem.
+
+\begin{theorem}
+Consider the linear time-delay system (\ref{ctds1}). Given $F\in
+\mathbf{R}^{n\times m},r\neq0$ and $\rho>0.$ If there exist positive-define
+matrices $P\in \mathbf{R}^{n\times n},Q\in \mathbf{R}^{Nn\times Nn}%
+,R\in \mathbf{R}^{n\times n},$and $X_{\mathrm{r}}=\left[
+\begin{array}
+[c]{cccc}%
+X_{\mathrm{r1}}^{\mathrm{T}} & X_{\mathrm{r2}}^{\mathrm{T}} & \cdots &
+X_{\mathrm{r}\left(  N+2\right)  }^{\mathrm{T}}%
+\end{array}
+\right]  ^{\mathrm{T}}\in \mathbf{R}^{\left(  N+2\right)  n\times n}%
+,H\in \mathbf{R}^{n\times m},$ non-singular $Y\in \mathbf{R}^{n\times n}$ such
+that the following hold
+\begin{equation}
+\left[
+\begin{array}
+[c]{cc}%
+\varpi \left(  i\right)   & \mathcal{X}_{\mathrm{r}}\\
+\ast & -\frac{1}{r}\mathcal{R}%
+\end{array}
+\right]  <0,i\in \mathcal{V}_{m},\label{eq33}%
+\end{equation}
+and the relations%
+\[
+\left.
+\begin{array}
+[c]{c}%
+\left \vert H_{i}^{\mathrm{T}}y\left(  t\right)  \right \vert \leq1,i\in \left \{
+1,m\right \}  ,\\
+H=\left[
+\begin{array}
+[c]{cccc}%
+H_{1} & H_{2} & \cdots & H_{m}%
+\end{array}
+\right]  ,
+\end{array}
+\right.
+\]
+are satisfied for all $x_{t}\in \mathcal{L}_{V},$ where%
+\[
+\mathcal{L}_{V}=\left \{  \psi \in \mathcal{\bar{C}}_{n,r}:V\left(  \psi \right)
+\leq \rho \right \}  ,
+\]
+and%
+\begin{align*}
+\varpi \left(  i\right)   &  =\Gamma_{\mathrm{P}i}^{\mathrm{T}}\left[
+\begin{array}
+[c]{cc}%
+0 & \mathcal{P}\\
+\mathcal{P} & 0
+\end{array}
+\right]  \Gamma_{\mathrm{P}i}+\Gamma_{\mathrm{R}i}^{\mathrm{T}}\left[
+\begin{array}
+[c]{cc}%
+0 & \mathcal{R}\\
+\mathcal{R} & 0
+\end{array}
+\right]  \Gamma_{\mathrm{R}i}+\Gamma_{\mathrm{Q}i}^{\mathrm{T}}\left[
+\begin{array}
+[c]{cc}%
+0 & \mathcal{Q}\\
+\mathcal{Q} & 0
+\end{array}
+\right]  \Gamma_{\mathrm{Q}i}\\
+&  +\mathrm{He}\left(  \left[
+\begin{array}
+[c]{c}%
+\mathcal{X}_{\mathrm{r1}}\\
+\mathcal{X}_{\mathrm{r2}}\\
+\vdots \\
+\mathcal{X}_{\mathrm{r}\left(  N+2\right)  }%
+\end{array}
+\right]  \left[
+\begin{array}
+[c]{cccc}%
+I_{n} & 0_{n,\left(  N-1\right)  n} & I_{n} & 0_{n,n}%
+\end{array}
+\right]  \right)  \\
+&  +\mathrm{He}\left(  \left[
+\begin{array}
+[c]{c}%
+I_{n}\\
+I_{n}\\
+\vdots \\
+I_{n}%
+\end{array}
+\right]  \left[
+\begin{array}
+[c]{cccc}%
+A & 0_{n,\left(  N-1\right)  n} & A_{\mathrm{r}} & -I_{n}%
+\end{array}
+\right]  \mathcal{Y}^{\mathrm{T}}\right)  \\
+&  +\mathrm{He}\left(  \left[
+\begin{array}
+[c]{c}%
+I_{n}\\
+I_{n}\\
+\vdots \\
+I_{n}%
+\end{array}
+\right]  \left[
+\begin{array}
+[c]{cc}%
+BD_{i}F^{\mathrm{T}}\mathfrak{Y}^{\mathrm{T}}+BD_{i}^{-}\mathcal{H} &
+0_{n,\left(  N+1\right)  n}%
+\end{array}
+\right]  \right)  ,
+\end{align*}
+
+
+with%
+\begin{align}
+\Gamma_{\mathrm{P}i}  &  =\left[
+\begin{array}
+[c]{ccc}%
+0_{n,n} & 0_{n,Nn} & I_{n}\\
+I_{n} & 0_{n,Nn} & 0_{n,n}%
+\end{array}
+\right]  ,\Gamma_{\mathrm{R}i}=\left[
+\begin{array}
+[c]{ccc}%
+0_{n,n} & 0_{n,Nn} & 0_{n,n}\\
+0_{n,n} & 0_{n,Nn} & \sqrt{r}I_{n}%
+\end{array}
+\right]  ,\Gamma_{\mathrm{Q}i}=\left[
+\begin{array}
+[c]{ccc}%
+I_{Nn} & 0_{Nn,n} & 0_{Nn,n}\\
+0_{Nn,n} & I_{Nn} & 0_{Nn,n}%
+\end{array}
+\right]  ,\label{eq29}\\
+\mathfrak{Y}  &  \mathfrak{=}Y^{-1},\mathcal{Y}\mathcal{=}\mathrm{diag}%
+\left \{  \mathfrak{Y,Y,\cdots,Y}\right \}  _{\left(  N+2\right)  n}%
+,\mathcal{Y}_{1}\mathcal{=}\mathrm{diag}\left \{  \mathfrak{Y,Y,\cdots
+,Y}\right \}  _{Nn},\nonumber \\
+\mathcal{P}  &  \mathcal{=}\mathfrak{Y}P\mathfrak{Y}^{\mathrm{T}}%
+,\mathcal{R=}\mathfrak{Y}R\mathfrak{Y}^{\mathrm{T}},\mathcal{Q}=\mathcal{Y}%
+_{1}Q\mathcal{Y}_{1}^{\mathrm{T}},\mathcal{H}=\mathfrak{Y}H,\nonumber \\
+\mathcal{X}_{\mathrm{r}}  &  =\left[
+\begin{array}
+[c]{cccc}%
+\mathcal{X}_{\mathrm{r1}}^{\mathrm{T}} & \mathcal{X}_{\mathrm{r2}}%
+^{\mathrm{T}} & \cdots & \mathcal{X}_{\mathrm{r}\left(  N+2\right)
+}^{\mathrm{T}}%
+\end{array}
+\right]  ^{\mathrm{T}},\mathcal{X}_{\mathrm{r}j}=\mathfrak{Y}X_{\mathrm{r}%
+j}\mathfrak{Y}^{\mathrm{T}},j\in \mathbf{I}\left[  1,N+2\right]  ,\nonumber
+\end{align}
+then the solution $x\left(  t\right)  \equiv0$ is asymptotically stable for
+the closed-loop system (\ref{ctds1}) with the set $\mathcal{L}_{V}$ contained
+in the domain of attraction.
+\end{theorem}
+
+\begin{proof}
+We choose the Lyapunov-Krasovskii functional in the form of (\ref{eq8}). Then
+the derivatives of $V_{i}\left(  x_{t}\right)  ,i=1,2,3,$ are given by%
+\begin{equation}
+\left.
+\begin{array}
+[c]{l}%
+\dot{V}_{1}\left(  x_{t}\right)  =\dot{x}^{\mathrm{T}}\left(  t\right)
+Px\left(  t\right)  +x^{\mathrm{T}}\left(  t\right)  P\dot{x}\left(  t\right)
+,\\
+\dot{V}_{2}\left(  x_{t}\right)  =\pi^{\mathrm{T}}\left(  t\right)
+Q\pi \left(  t\right)  -\pi^{\mathrm{T}}\left(  t-\frac{r}{N}\right)
+Q\pi \left(  t-\frac{r}{N}\right)  ,\\
+\dot{V}_{3}\left(  x_{t}\right)  =r\dot{x}^{\mathrm{T}}\left(  t\right)
+R\dot{x}\left(  t\right)  -\int_{-r}^{0}\dot{x}^{\mathrm{T}}\left(
+t+s\right)  R\dot{x}\left(  t+s\right)  \mathrm{d}s.
+\end{array}
+\right.  \label{eq10}%
+\end{equation}
+
+
+By denoting $\eta^{\mathrm{T}}\left(  t\right)  =\left[
+\begin{array}
+[c]{ccc}%
+\pi^{\mathrm{T}}\left(  t\right)  & x^{\mathrm{T}}\left(  t-r\right)  &
+\dot{x}^{\mathrm{T}}\left(  t\right)
+\end{array}
+\right]  ^{\mathrm{T}},$ we have%
+\begin{align}
+\dot{V}\left(  x_{t}\right)   &  =\dot{V}_{1}\left(  x_{t}\right)  +\dot
+{V}_{2}\left(  x_{t}\right)  +\dot{V}_{3}\left(  x_{t}\right) \nonumber \\
+&  =\eta^{\mathrm{T}}\left(  t\right)  \Gamma_{1}\eta \left(  t\right)
+-\int_{t-r}^{t}\dot{x}^{\mathrm{T}}\left(  s\right)  R\dot{x}\left(  s\right)
+\mathrm{d}s, \label{eq19}%
+\end{align}
+where $\Gamma_{1}$ is given by%
+\begin{equation}
+\Gamma_{1}=\Gamma_{\mathrm{P}i}^{\mathrm{T}}\left[
+\begin{array}
+[c]{cc}%
+0 & P\\
+P & 0
+\end{array}
+\right]  \Gamma_{\mathrm{P}i}+\Gamma_{\mathrm{R}i}^{\mathrm{T}}\left[
+\begin{array}
+[c]{cc}%
+R & 0\\
+0 & R
+\end{array}
+\right]  \Gamma_{\mathrm{R}i}+\Gamma_{\mathrm{Q}i}^{\mathrm{T}}\left[
+\begin{array}
+[c]{cc}%
+Q & 0\\
+0 & -Q
+\end{array}
+\right]  \Gamma_{\mathrm{Q}i}, \label{eq30}%
+\end{equation}
+where $\Gamma_{\mathrm{P}i},\Gamma_{\mathrm{R}i},\Gamma_{\mathrm{Q}i}$ are in
+the form of (??). By using the Newton-Leibniz formula and the system
+(\ref{ctds}), we have the following two identities:%
+\begin{equation}
+\left.
+\begin{array}
+[c]{l}%
+0=2\eta^{\mathrm{T}}\left(  t\right)  X_{\mathrm{r}}\left(  x\left(  t\right)
+-x\left(  t-r\right)  -\int_{t-r}^{t}\dot{x}\left(  s\right)  \mathrm{d}%
+s\right) \\
+0=2\eta^{\mathrm{T}}\left(  t\right)  Y_{\eta}\left(  Ax\left(  t\right)
++A_{\mathrm{r}}x\left(  t-r\right)  +B\mathrm{sat}\left(  F^{\mathrm{T}%
+}x\left(  t\right)  \right)  -\dot{x}\left(  t\right)  \right)  ,
+\end{array}
+\right.  \label{eq20}%
+\end{equation}
+where $Y_{\eta}$ $\in \mathbf{R}^{\left(  N+2\right)  n\times n}$ is defined as%
+\begin{equation}
+Y_{\eta}=\left[
+\begin{array}
+[c]{cccc}%
+Y & Y & \cdots & Y
+\end{array}
+\right]  ^{\mathrm{T}}. \label{eq21}%
+\end{equation}
+Inserting (\ref{eq20}) into (\ref{eq19}) gives%
+\begin{align}
+\dot{V}\left(  x_{t}\right)  =  &  \eta^{\mathrm{T}}\left(  t\right)
+\Gamma_{3}\eta \left(  t\right)  +2\eta^{\mathrm{T}}\left(  t\right)  Y_{\eta
+}B\mathrm{sat}\left(  F^{\mathrm{T}}x\left(  t\right)  \right) \nonumber \\
+&  -\int_{t-r}^{t}z^{\mathrm{T}}\left(  s\right)  R^{-1}z\left(  s\right)
+\mathrm{d}s\nonumber \\
+\leq &  \eta^{\mathrm{T}}\left(  t\right)  \Gamma_{3}\eta \left(  t\right)
++2\eta^{\mathrm{T}}\left(  t\right)  Y_{\eta}B\mathrm{sat}\left(
+F^{\mathrm{T}}x\left(  t\right)  \right)  , \label{eq22}%
+\end{align}
+where%
+\[
+z\left(  s\right)  =X_{\mathrm{r}}^{\mathrm{T}}\eta \left(  t\right)  +R\dot
+{x}\left(  s\right)  ,
+\]
+and%
+\begin{equation}
+\Gamma_{3}=\Gamma_{1}+\Gamma_{2}+rX_{\mathrm{r}}R^{-1}X_{\mathrm{r}%
+}^{\mathrm{T}} \label{eq23}%
+\end{equation}
+with $\Gamma_{2}$ defined as%
+
+\begin{equation}
+\Gamma_{2}=\mathrm{He}\left(  X_{\mathrm{r}}\left[
+\begin{array}
+[c]{cccc}%
+I_{n} & 0_{n,\left(  N-1\right)  n} & I_{n} & 0_{n,n}%
+\end{array}
+\right]  \right)  +\mathrm{He}\left(  Y_{\eta}\left[
+\begin{array}
+[c]{cccc}%
+A & 0_{n,\left(  N-1\right)  n} & A_{\mathrm{r}} & -I_{n}%
+\end{array}
+\right]  \right)  \label{eq24}%
+\end{equation}
+From Lemma \ref{lemma1}, there exist a series of nonnegative number
+$\lambda_{i},i\in \mathcal{V}_{m}$ such that $\  \ $\
+\begin{equation}
+\mathrm{sat}\left(  F^{\mathrm{T}}y\left(  t\right)  \right)  =\underset
+{i\in \mathcal{V}_{m}}{\sum}\lambda_{i}\left(  D_{i}F^{\mathrm{T}}+D_{i}%
+^{-}H^{\mathrm{T}}\right)  y\left(  t\right)  ,\text{ }\underset
+{i\in \mathcal{V}_{m}}{\sum}\lambda_{i}=1. \label{eq9}%
+\end{equation}
+We conclude from (\ref{eq9}) that,
+\begin{align}
+2\eta^{\mathrm{T}}\left(  t\right)  Y_{\eta}B\mathrm{sat}\left(
+F^{\mathrm{T}}x\left(  t\right)  \right)   &  =2\eta^{\mathrm{T}}\left(
+t\right)  Y_{\eta}B\underset{i\in \mathcal{V}_{m}}{\sum}\lambda_{i}\left(
+D_{i}F^{\mathrm{T}}+D_{i}^{-}H^{\mathrm{T}}\right)  x\left(  t\right)
+\nonumber \\
+&  =2\eta^{\mathrm{T}}\left(  t\right)  \underset{i\in \mathcal{V}_{m}}{\sum
+}\lambda_{i}\left[
+\begin{array}
+[c]{cc}%
+Y_{\eta}B\left(  D_{i}F^{\mathrm{T}}+D_{i}^{-}H^{\mathrm{T}}\right)  &
+0_{n,\left(  N+1\right)  n}%
+\end{array}
+\right]  \eta \left(  t\right) \nonumber \\
+&  \leq \eta^{\mathrm{T}}\left(  t\right)  \underset{i\in \mathcal{V}_{m}}{\max
+}\left \{  \Gamma_{4}\left(  i\right)  \right \}  \eta \left(  t\right)  ,
+\label{eq28}%
+\end{align}
+where%
+\begin{equation}
+\Gamma_{4}\left(  i\right)  =\mathrm{He}\left(  \left[
+\begin{array}
+[c]{cc}%
+Y_{\eta}B\left(  D_{i}F^{\mathrm{T}}+D_{i}^{-}H^{\mathrm{T}}\right)  &
+0_{n,\left(  N+1\right)  n}%
+\end{array}
+\right]  \right)  . \label{eq31}%
+\end{equation}
+Then substituting (\ref{eq28}) into (\ref{eq22}) gives%
+\[
+\dot{V}\left(  x_{t}\right)  \leq \underset{i\in \mathcal{V}_{m}}{\max}%
+\eta^{\mathrm{T}}\left(  t\right)  \varsigma \left(  i\right)  \eta \left(
+t\right)  ,
+\]
+where $\varsigma \left(  i\right)  =\Gamma_{1}+\Gamma_{2}+\Gamma_{4}\left(
+i\right)  +rX_{\mathrm{r}}R^{-1}X_{\mathrm{r}}^{\mathrm{T}}.$
+
+By the Schur complement, $\varsigma \left(  i\right)  <0,i\in \mathcal{V}_{m}$
+is equivalent to%
+\begin{equation}
+\left[
+\begin{array}
+[c]{cc}%
+\Gamma_{1}+\Gamma_{2}+\Gamma_{4}\left(  i\right)  & X_{\mathrm{r}}\\
+\ast & -\frac{1}{r}R
+\end{array}
+\right]  <0, \label{eq32}%
+\end{equation}
+which is equivalent to (\ref{eq33}) by setting $\mathfrak{Y}\mathfrak{=}%
+Y^{-1},\mathcal{Y}\mathcal{=}\mathrm{diag}\left \{  \mathfrak{Y,Y,\cdots
+,Y}\right \}  _{\left(  N+2\right)  n},\mathcal{Y}_{1}\mathcal{=}%
+\mathrm{diag}\left \{  \mathfrak{Y,Y,\cdots,Y}\right \}  _{Nn},$
+
+$\mathcal{P}\mathcal{=}\mathfrak{Y}P\mathfrak{Y}^{\mathrm{T}},\mathcal{R=}%
+\mathfrak{Y}R\mathfrak{Y}^{\mathrm{T}},\mathcal{Q}=\mathcal{Y}_{1}%
+Q\mathcal{Y}_{1}^{\mathrm{T}},\mathcal{H}=\mathfrak{Y}H,\mathcal{X}%
+_{\mathrm{r}j}=\mathfrak{Y}X_{\mathrm{r}j}\mathfrak{Y}^{\mathrm{T}}%
+,j\in \mathbf{I}\left[  1,N+2\right]  $ and performing a congruence
+transformation by $\mathcal{Y}$ to (\ref{eq32}). That is to say that
+(\ref{eq32}) holds if (\ref{eq33}) is satisfied. Then we have $\dot{V}\left(
+x_{t}\right)  <0.$
+\end{proof}
+
+
+\end{document}

@@ -1,0 +1,364 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2015.1.20)  16 JUN 2015 09:38
+entering extended mode
+**regional*stability*-*3.tex
+
+("C:\Users\yangxuefei\Desktop\我的文章\文章3\regional stability - 3\regio
+nal stability - 3.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(C:\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(C:\CTEX\MiKTeX\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\CTEX\MiKTeX\tex\latex\bbm\bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+)
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen107
+))
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen108
+)
+(C:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks17
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks18
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(C:\CTEX\MiKTeX\tex\latex\tools\verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks21
+\verbatim@line=\toks22
+\verbatim@in@stream=\read1
+)
+(C:\CTEX\MiKTeX\tex\latex\jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(C:\CTEX\MiKTeX\tex\latex\easy\easybmat.sty
+Document Style `easybmat' v1.0 <2001/06/13>.
+(C:\CTEX\MiKTeX\tex\latex\easy\easy.sty
+Document Style `easy' v1.1 <2001/05/31>.
+Package: easy 2001/05/31 v1.1
+\@easy@level=\count99
+\@easy@ncol=\count100
+\@easy@nrow=\count101
+\@easy@cnt=\count102
+\@easy@boxviii=\box28
+\@easy@minxviii=\dimen116
+\@easy@minyviii=\dimen117
+\@easy@maxxviii=\dimen118
+\@easy@maxyviii=\dimen119
+\@easy@boxvii=\box29
+\@easy@minxvii=\dimen120
+\@easy@minyvii=\dimen121
+\@easy@maxxvii=\dimen122
+\@easy@maxyvii=\dimen123
+\@easy@boxvi=\box30
+\@easy@minxvi=\dimen124
+\@easy@minyvi=\dimen125
+\@easy@maxxvi=\dimen126
+\@easy@maxyvi=\dimen127
+\@easy@boxv=\box31
+\@easy@minxv=\dimen128
+\@easy@minyv=\dimen129
+\@easy@maxxv=\dimen130
+\@easy@maxyv=\dimen131
+\@easy@boxiv=\box32
+\@easy@minxiv=\dimen132
+\@easy@minyiv=\dimen133
+\@easy@maxxiv=\dimen134
+\@easy@maxyiv=\dimen135
+\@easy@boxiii=\box33
+\@easy@minxiii=\dimen136
+\@easy@minyiii=\dimen137
+\@easy@maxxiii=\dimen138
+\@easy@maxyiii=\dimen139
+\@easy@boxii=\box34
+\@easy@minxii=\dimen140
+\@easy@minyii=\dimen141
+\@easy@maxxii=\dimen142
+\@easy@maxyii=\dimen143
+\@easy@boxi=\box35
+\@easy@minxi=\dimen144
+\@easy@minyi=\dimen145
+\@easy@maxxi=\dimen146
+\@easy@maxyi=\dimen147
+\@easy@hsizexxx=\dimen148
+\@easy@vsizexxx=\dimen149
+\@easy@hsizexxix=\dimen150
+\@easy@vsizexxix=\dimen151
+\@easy@hsizexxviii=\dimen152
+\@easy@vsizexxviii=\dimen153
+\@easy@hsizexxvii=\dimen154
+\@easy@vsizexxvii=\dimen155
+\@easy@hsizexxvi=\dimen156
+\@easy@vsizexxvi=\dimen157
+\@easy@hsizexxv=\dimen158
+\@easy@vsizexxv=\dimen159
+\@easy@hsizexxiv=\dimen160
+\@easy@vsizexxiv=\dimen161
+\@easy@hsizexxiii=\dimen162
+\@easy@vsizexxiii=\dimen163
+\@easy@hsizexxii=\dimen164
+\@easy@vsizexxii=\dimen165
+\@easy@hsizexxi=\dimen166
+\@easy@vsizexxi=\dimen167
+\@easy@hsizexx=\dimen168
+\@easy@vsizexx=\dimen169
+\@easy@hsizexix=\dimen170
+\@easy@vsizexix=\dimen171
+\@easy@hsizexviii=\dimen172
+\@easy@vsizexviii=\dimen173
+\@easy@hsizexvii=\dimen174
+\@easy@vsizexvii=\dimen175
+\@easy@hsizexvi=\dimen176
+\@easy@vsizexvi=\dimen177
+\@easy@hsizexv=\dimen178
+\@easy@vsizexv=\dimen179
+\@easy@hsizexiv=\dimen180
+\@easy@vsizexiv=\dimen181
+\@easy@hsizexiii=\dimen182
+\@easy@vsizexiii=\dimen183
+\@easy@hsizexii=\dimen184
+\@easy@vsizexii=\dimen185
+\@easy@hsizexi=\dimen186
+\@easy@vsizexi=\dimen187
+\@easy@hsizex=\dimen188
+\@easy@vsizex=\dimen189
+\@easy@hsizeix=\dimen190
+\@easy@vsizeix=\dimen191
+\@easy@hsizeviii=\dimen192
+\@easy@vsizeviii=\dimen193
+\@easy@hsizevii=\dimen194
+\@easy@vsizevii=\dimen195
+\@easy@hsizevi=\dimen196
+\@easy@vsizevi=\dimen197
+\@easy@hsizev=\dimen198
+\@easy@vsizev=\dimen199
+\@easy@hsizeiv=\dimen200
+\@easy@vsizeiv=\dimen201
+\@easy@hsizeiii=\dimen202
+\@easy@vsizeiii=\dimen203
+\@easy@hsizeii=\dimen204
+\@easy@vsizeii=\dimen205
+\@easy@hsizei=\dimen206
+\@easy@vsizei=\dimen207
+\@easy@dash@len=\dimen208
+\@easy@dash@sep=\dimen209
+)
+Package: easybmat 2001/05/31 v1.1
+\@bmat@size@rule=\dimen210
+\@bmat@size@dash=\dimen211
+) (C:\CTEX\MiKTeX\tex\latex\graphics\color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(C:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(C:\CTEX\MiKTeX\tex\latex\graphics\dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\c@theorem=\count103
+\c@acknowledgment=\count104
+\c@algorithm=\count105
+\c@axiom=\count106
+\c@case=\count107
+\c@assumption=\count108
+\c@claim=\count109
+\c@conclusion=\count110
+\c@condition=\count111
+\c@conjecture=\count112
+\c@corollary=\count113
+\c@criterion=\count114
+\c@definition=\count115
+\c@example=\count116
+\c@exercise=\count117
+\c@lemma=\count118
+\c@notation=\count119
+\c@problem=\count120
+\c@proposition=\count121
+\c@remark=\count122
+\c@solution=\count123
+\c@summary=\count124
+Package color Info: Redefining color blue on input line 65.
+
+
+LaTeX Warning: Unused global option(s):
+    [9pt].
+
+
+("C:\Users\yangxuefei\Desktop\我的文章\文章3\regional stability - 3\regio
+nal stability - 3.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Try loading font information for U+msa on input line 76.
+ (C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+
+(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 76.
+
+(C:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+
+LaTeX Warning: Reference `ctds1' on page 1 undefined on input line 150.
+
+
+LaTeX Warning: Reference `ctds1' on page 1 undefined on input line 155.
+
+
+LaTeX Warning: Reference `ctds1' on page 1 undefined on input line 157.
+
+[1
+
+]
+
+LaTeX Warning: Reference `ctds1' on page 2 undefined on input line 262.
+
+[2]
+LaTeX Font Info:    Try loading font information for U+euf on input line 368.
+ (C:\CTEX\MiKTeX\tex\latex\amsfonts\ueuf.fd
+File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
+)
+
+LaTeX Warning: Reference `ctds1' on page 3 undefined on input line 410.
+
+[3] [4]
+("C:\Users\yangxuefei\Desktop\我的文章\文章3\regional stability - 3\regio
+nal stability - 3.aux")
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2121 strings out of 495355
+ 25673 string characters out of 3183882
+ 85768 words of memory out of 3000000
+ 5262 multiletter control sequences out of 15000+200000
+ 15331 words of font info for 61 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 32i,16n,24p,269b,290s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on "regional stability - 3.dvi" (4 pages, 29652 bytes).
